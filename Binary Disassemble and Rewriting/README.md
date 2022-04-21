@@ -11,9 +11,15 @@
 [SoK:All You Ever Wanted to Know About x86:x64 Binary Disassembly But Were Afraid to Ask, IEEE Symposium on Security and Privacy, 2021](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Suvery%20and%20Overview/SoK-%20All%20You%20Ever%20Wanted%20to%20Know%20About%20x86:x64%20Binary%20Disassembly%20But%20Were%20Afraid%20to%20Ask.pdf)
 
 
-## Binary Disassemble and Rewriting
+## Binary Disassemble and Rewriting:
 
 
+
+## Others:
+
+[Low Overhead Dynamic Binary Translation on ARM](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Research/Low%20Overhead%20Dynamic%20Binary%20Translation%20on%20ARM.pdf)
+
+将AArch32转换为AArch64指令
 
 # Conclusion about Paper：
 
