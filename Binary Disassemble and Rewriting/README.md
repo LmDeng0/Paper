@@ -10,6 +10,11 @@
 
 [SoK:All You Ever Wanted to Know About x86:x64 Binary Disassembly But Were Afraid to Ask, IEEE Symposium on Security and Privacy, 2021](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Suvery%20and%20Overview/SoK-%20All%20You%20Ever%20Wanted%20to%20Know%20About%20x86:x64%20Binary%20Disassembly%20But%20Were%20Afraid%20to%20Ask.pdf)
 
+
+## Binary Disassemble and Rewriting
+
+
+
 # Conclusion about Paper：
 
 An Empirical Study on ARM Disassembly Tools.
