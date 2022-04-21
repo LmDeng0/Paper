@@ -21,6 +21,7 @@
 
 将AArch32转换为AArch64指令
 
+[A Retargetable Static Binary Translator for the ARM Architecture](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Research/A%20Retargetable%20Static%20Binary%20Translator%20for%20the%20ARM%20Architecture.pdf)
 # Conclusion about Paper：
 
 An Empirical Study on ARM Disassembly Tools.
