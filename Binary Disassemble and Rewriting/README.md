@@ -47,7 +47,7 @@ An Empirical Study on ARM Disassembly Tools.
 
 
 
-Speculative disassembly of binary code
+### Speculative disassembly of binary code
 
 Embedded software is rapidly increasing in complexity. To cope with this, developers rely on third-party IPs to accel- erate product delivery. However, IP source code might not be available which limits verifiability. This creates a partic- ular challenge especially in safety-critical applications, e.g., automotive. Static Binary Analysis (SBA) is a promising technique to address such a challenge by providing engineers with the ability to reason about the actual instructions exe- cuted for all possible inputs. Disassembly is the fundamental first step for any SBA where assembly instructions are re- covered from binary code. Correct disassembly, however, is challenging since data is mixed with code in binaries. More- over, variable-size ISA, e.g., Thumb and TriCore, allow a single byte sequence to have multiple valid interpretations.
 We introduce Spedi, an open source SPEculative DIsas- sembler for Thumb ISA. Spedi is based on a principled ap- proach to disassembly where all possible basic blocks are speculatively recovered. Then, basic blocks are refined using conflict analyses to identify assembly instructions. Experi- ments using a wide range of benchmarks demonstrate that Spedi is both fast and effective. It outperforms IDA Pro, the de-facto industry standard disassembler, in terms of dis- assembly correctness. Spedi can also recover the majority of the call graph and switch table targets. It is resilient to obfuscation and doesn’t use any symbol information which makes it a suitable front-end for a wide variety of SBA ap- plications including security analysis.
