@@ -43,7 +43,7 @@ An Empirical Study on ARM Disassembly Tools.
 
 ## Abstract:
 
-### An In-Depth Analysis of Disassembly on Full-Scale x86/x64 Binaries
+### An In Depth Analysis of Disassembly on Full Scale x86/x64 Binaries
 
 **Abstract:** It is well-known that static disassembly is an unsolved problem, but how much of a problem is it in real software— for instance, for binary protection schemes? This work studies the accuracy of nine state-of-the-art disassemblers on 981 real-world compiler-generated binaries with a wide variety of properties. In contrast, prior work focuses on isolated corner cases; we show that this has led to a widespread and overly pessimistic view on the prevalence of complex constructs like inline data and overlapping code, leading reviewers and researchers to underestimate the potential of binary-based research. On the other hand, some constructs, such as function boundaries, are much harder to recover accurately than is reflected in the litera- ture, which rarely discusses much needed error handling for these primitives. We study 30 papers recently pub- lished in six major security venues, and reveal a mismatch between expectations in the literature, and the actual ca- pabilities of modern disassemblers. Our findings help improve future research by eliminating this mismatch.
 
