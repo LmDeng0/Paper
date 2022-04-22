@@ -18,16 +18,16 @@
 ## Binary Disassemble and Rewriting:
 
 
-- [Speculative disassembly of binary code (CASES , 2016)](./Research/Speculative%20disassembly%20of%20binary%20code.pdf)[Abstract](#Speculative-disassembly-of-binary-code)
+- [Speculative disassembly of binary code (CASES , 2016)](./Research/Speculative%20disassembly%20of%20binary%20code.pdf)&emsp;[[Abstract]](#Speculative-disassembly-of-binary-code)
 
      Spedi is a speculative disassembler for the variable-size Thumb ISA
 
 
 ## Binary Translator:
 
-- [Low Overhead Dynamic Binary Translation on ARM (CCS, 2006)](./Research/Low%20Overhead%20Dynamic%20Binary%20Translation%20on%20ARM.pdf)
+- [Low Overhead Dynamic Binary Translation on ARM (CCS, 2006)](./Research/Low%20Overhead%20Dynamic%20Binary%20Translation%20on%20ARM.pdf)&emsp;[[Abstract]](#Low-Overhead-Dynamic-Binary-Translation-on-ARM)
 
-将AArch32转换为AArch64指令
+     将AArch32转换为AArch64指令
 
 
 - [A Retargetable Static Binary Translator for the ARM Architecture](./Research/A%20Retargetable%20Static%20Binary%20Translator%20for%20the%20ARM%20Architecture.pdf)
@@ -53,16 +53,24 @@ An Empirical Study on ARM Disassembly Tools.
 **Abstract:** Disassembly of binary code is hard, but necessary for improving the security of binary software. Over the past few decades, research in binary disassembly has produced many tools and frameworks, which have been made available to researchers and security professionals. These tools employ a variety of strategies that grant them different characteristics. The lack of systematization, however, impedes new research in the area and makes selecting the right tool hard, as we do not understand the strengths and weaknesses of existing tools. In this paper, we systematize binary disassembly through the study of nine popular, open-source tools. We couple the manual examination of their code bases with the most comprehensive experimental evaluation (thus far) using 3,788 binaries. Our study yields a comprehensive description and organization of strategies for disassembly, classifying them as either algorithm or else heuristic. Meanwhile, we measure and report the impact of individual algorithms on the results of each tool. We find that while principled algorithms are used by all tools, they still heavily rely on heuristics to increase code coverage. Depending on the heuristics used, different coverage-vs-correctness trade-offs come in play, leading to tools with different strengths and weaknesses. We envision that these findings will help users pick the right tool and assist researchers in improving binary disassembly.
 
 
-### - An Empirical Study on ARM Disassembly Tools
+### An Empirical Study on ARM Disassembly Tools
 
 **Abstract:** With the increasing popularity of embedded devices, ARM is becom- ing the dominant architecture for them. In the meanwhile, there is a pressing need to perform security assessments for these devices. Due to different types of peripherals, it is challenging to dynami- cally run the firmware of these devices in an emulated environment. Therefore, the static analysis is still commonly used. Existing work usually leverages off-the-shelf tools to disassemble stripped ARM binaries and (implicitly) assume that reliable disassembling binaries and function recognition are solved problems. However, whether this assumption really holds is unknown.
 
 In this paper, we conduct the first comprehensive study on ARM disassembly tools. Specifically, we build 1, 896 ARM bina- ries (including 248 obfuscated ones) with different compilers, com- piling options, and obfuscation methods. We then evaluate them using eight state-of-the-art ARM disassembly tools (including both commercial and noncommercial ones) on their capabilities to lo- cate instructions and function boundaries. These two are funda- mental ones, which are leveraged to build other primitives. Our work reveals some observations that have not been systemati- cally summarized and/or confirmed. For instance, we find that the existence of both ARM and Thumb instruction sets, and the reuse of the BL instruction for both function calls and branches bring serious challenges to disassembly tools. Our evaluation sheds light on the limitations of state-of-the-art disassembly tools and points out potential directions for improvement. To engage the community, we release the data set, and the related scripts at https://github.com/valour01/arm_disasssembler_study.
 
-### - Speculative disassembly of binary code
+### Speculative disassembly of binary code
 
 **Abstract:** Embedded software is rapidly increasing in complexity. To cope with this, developers rely on third-party IPs to accel- erate product delivery. However, IP source code might not be available which limits verifiability. This creates a partic- ular challenge especially in safety-critical applications, e.g., automotive. Static Binary Analysis (SBA) is a promising technique to address such a challenge by providing engineers with the ability to reason about the actual instructions exe- cuted for all possible inputs. Disassembly is the fundamental first step for any SBA where assembly instructions are re- covered from binary code. Correct disassembly, however, is challenging since data is mixed with code in binaries. More- over, variable-size ISA, e.g., Thumb and TriCore, allow a single byte sequence to have multiple valid interpretations.
 
 We introduce Spedi, an open source SPEculative DIsas- sembler for Thumb ISA. Spedi is based on a principled ap- proach to disassembly where all possible basic blocks are speculatively recovered. Then, basic blocks are refined using conflict analyses to identify assembly instructions. Experi- ments using a wide range of benchmarks demonstrate that Spedi is both fast and effective. It outperforms IDA Pro, the de-facto industry standard disassembler, in terms of dis- assembly correctness. Spedi can also recover the majority of the call graph and switch table targets. It is resilient to obfuscation and doesn’t use any symbol information which makes it a suitable front-end for a wide variety of SBA ap- plications including security analysis.
 
 
+### Low Overhead Dynamic Binary Translation on ARM
+
+
+**Abstract:** The ARMv8 architecture introduced AArch64, a 64-bit exe- cution mode with a new instruction set, while retaining binary compatibility with previous versions of the ARM architec- ture through AArch32, a 32-bit execution mode. Most hard- ware implementations of ARMv8 processors support both AArch32 and AArch64, which comes at a cost in hardware complexity.
+
+We present MAMBO-X64, a dynamic binary translator for Linux which executes 32-bit ARM binaries using only the AArch64 instruction set. We have evaluated the performance of MAMBO-X64 on three existing ARMv8 processors which support both AArch32 and AArch64 instruction sets. The performance was measured by comparing the running time of 32-bit benchmarks running under MAMBO-X64 with the same benchmark running natively. On SPEC CPU2006, we achieve a geometric mean overhead of less than 7.5 % on in-order Cortex-A53 processors and a performance improve- ment of 1 % on out-of-order X-Gene 1 processors.
+
+MAMBO-X64 achieves such low overhead by novel optimizations to map AArch32 floating-point registers to AArch64 registers dynamically, handle overflowing address calculations efficiently, generate traces that harness hardware return address prediction, and handle operating system sig- nals accurately.
