@@ -6,9 +6,9 @@
 
 ### x86-64
 
-- [An In-Depth Analysis of Disassembly on Full-Scale x86/x64 Binaries (USENIX, 2016)](./Suvery%20and%20Overview/An%20In-Depth%20Analysis%20of%20Disassembly%20on%20Full-Scale%20x86:x64%20Binaries.pdf)&emsp;[[Abstract]](#An-In-Depth-Analysis-of-Disassembly-on-Full-Scale-x86-x64-Binaries)
+- [An In-Depth Analysis of Disassembly on Full-Scale x86/x64 Binaries (USENIX, 2016)](./Suvery%20and%20Overview/An%20In-Depth%20Analysis%20of%20Disassembly%20on%20Full-Scale%20x86:x64%20Binaries.pdf)&emsp;[[Abstract]](#An-In-Depth-Analysis-of-Disassembly-on-Full-Scale-x86-/-x64-Binaries)
 
-- [SoK:All You Ever Wanted to Know About x86:x64 Binary Disassembly But Were Afraid to Ask (IEEE Symposium on Security and Privacy, 2021)](./Suvery%20and%20Overview/SoK-%20All%20You%20Ever%20Wanted%20to%20Know%20About%20x86:x64%20Binary%20Disassembly%20But%20Were%20Afraid%20to%20Ask.pdf)[Anstract]
+- [SoK:All You Ever Wanted to Know About x86/x64 Binary Disassembly But Were Afraid to Ask (IEEE Symposium on Security and Privacy, 2021)](./Suvery%20and%20Overview/SoK-%20All%20You%20Ever%20Wanted%20to%20Know%20About%20x86:x64%20Binary%20Disassembly%20But%20Were%20Afraid%20to%20Ask.pdf)&emsp;[Abstract](#SoK-:-All-You-Ever-Wanted-to-Know-About-x86-/-x64-Binary-Disassembly-But-Were-Afraid-to-Ask)
 
 ### ARM
 
@@ -43,10 +43,14 @@ An Empirical Study on ARM Disassembly Tools.
 
 ## Abstract:
 
-### An In Depth Analysis of Disassembly on Full Scale x86 x64 Binaries
+### An In Depth Analysis of Disassembly on Full Scale x86/x64 Binaries
 
 **Abstract:** It is well-known that static disassembly is an unsolved problem, but how much of a problem is it in real software— for instance, for binary protection schemes? This work studies the accuracy of nine state-of-the-art disassemblers on 981 real-world compiler-generated binaries with a wide variety of properties. In contrast, prior work focuses on isolated corner cases; we show that this has led to a widespread and overly pessimistic view on the prevalence of complex constructs like inline data and overlapping code, leading reviewers and researchers to underestimate the potential of binary-based research. On the other hand, some constructs, such as function boundaries, are much harder to recover accurately than is reflected in the litera- ture, which rarely discusses much needed error handling for these primitives. We study 30 papers recently pub- lished in six major security venues, and reveal a mismatch between expectations in the literature, and the actual ca- pabilities of modern disassemblers. Our findings help improve future research by eliminating this mismatch.
 
+
+### SoK: All You Ever Wanted to Know About x86/x64 Binary Disassembly But Were Afraid to Ask
+
+**Abstract:** Disassembly of binary code is hard, but necessary for improving the security of binary software. Over the past few decades, research in binary disassembly has produced many tools and frameworks, which have been made available to researchers and security professionals. These tools employ a variety of strategies that grant them different characteristics. The lack of systematization, however, impedes new research in the area and makes selecting the right tool hard, as we do not understand the strengths and weaknesses of existing tools. In this paper, we systematize binary disassembly through the study of nine popular, open-source tools. We couple the manual examination of their code bases with the most comprehensive experimental evaluation (thus far) using 3,788 binaries. Our study yields a comprehensive description and organization of strategies for disassembly, classifying them as either algorithm or else heuristic. Meanwhile, we measure and report the impact of individual algorithms on the results of each tool. We find that while principled algorithms are used by all tools, they still heavily rely on heuristics to increase code coverage. Depending on the heuristics used, different coverage-vs-correctness trade-offs come in play, leading to tools with different strengths and weaknesses. We envision that these findings will help users pick the right tool and assist researchers in improving binary disassembly.
 
 ### Speculative disassembly of binary code
 
