@@ -21,7 +21,14 @@
 
 将AArch32转换为AArch64指令
 
+[Speculative disassembly of binary code, CASES , 2016](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Research/Speculative%20disassembly%20of%20binary%20code.pdf)
+
+
+Spedi is a speculative disassembler for the variable-size Thumb ISA
+
 [A Retargetable Static Binary Translator for the ARM Architecture](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Research/A%20Retargetable%20Static%20Binary%20Translator%20for%20the%20ARM%20Architecture.pdf)
+
+
 # Conclusion about Paper：
 
 An Empirical Study on ARM Disassembly Tools.
