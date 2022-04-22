@@ -6,7 +6,7 @@
 
 ### x86-64
 
-- [An In-Depth Analysis of Disassembly on Full-Scale x86/x64 Binaries (USENIX, 2016)](./Suvery%20and%20Overview/An%20In-Depth%20Analysis%20of%20Disassembly%20on%20Full-Scale%20x86:x64%20Binaries.pdf) <font color=red>[[Abstract]](#An-In-Depth-Analysis-of-Disassembly-on-Full-Scale-x86-x64-Binaries)</font>
+- [An In-Depth Analysis of Disassembly on Full-Scale x86/x64 Binaries (USENIX, 2016)](./Suvery%20and%20Overview/An%20In-Depth%20Analysis%20of%20Disassembly%20on%20Full-Scale%20x86:x64%20Binaries.pdf) <font color=red>阿道夫收到</font>[[Abstract]](#An-In-Depth-Analysis-of-Disassembly-on-Full-Scale-x86-x64-Binaries)
 
 - [SoK:All You Ever Wanted to Know About x86:x64 Binary Disassembly But Were Afraid to Ask (IEEE Symposium on Security and Privacy, 2021)](./Suvery%20and%20Overview/SoK-%20All%20You%20Ever%20Wanted%20to%20Know%20About%20x86:x64%20Binary%20Disassembly%20But%20Were%20Afraid%20to%20Ask.pdf)[Anstract]
 
