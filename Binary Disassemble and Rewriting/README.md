@@ -13,6 +13,7 @@
 ### ARM
 
 - [An Empirical Study on ARM Disassembly Tools (SIGSOFT, 2020)](./Suvery%20and%20Overview/An%20Empirical%20Study%20on%20ARM%20Disassembly%20Tools.pdf)&emsp;[[Abstract]](#An-Empirical-Study-on-ARM-Disassembly-Tools)
+[[Detail Notes]](https://www.notion.so/An-Empirical-Study-on-ARM-Disassembly-Tools-43b4857a733e45589733bbefe3ad1a6b)
 
 
 ## Binary Disassemble and Rewriting:
