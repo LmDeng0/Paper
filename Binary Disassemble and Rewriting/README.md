@@ -19,7 +19,7 @@
 
 
 - [Speculative disassembly of binary code (CASES , 2016)](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Research/Speculative%20disassembly%20of%20binary%20code.pdf)
-- 
+
 Spedi is a speculative disassembler for the variable-size Thumb ISA
 [Abstract](#Speculative-disassembly-of-binary-code)
 
