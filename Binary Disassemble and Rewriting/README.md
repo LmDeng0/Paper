@@ -12,7 +12,7 @@
 
 ### ARM
 
-- [An Empirical Study on ARM Disassembly Tools (SIGSOFT, 2020)](https://github.com/LmDeng0/Paper/blob/main/Binary%20Disassemble%20and%20Rewriting/Suvery%20and%20Overview/An%20Empirical%20Study%20on%20ARM%20Disassembly%20Tools.pdf)
+- [An Empirical Study on ARM Disassembly Tools (SIGSOFT, 2020)](./Suvery%20and%20Overview/An%20Empirical%20Study%20on%20ARM%20Disassembly%20Tools.pdf)
 
 
 ## Binary Disassemble and Rewriting:
